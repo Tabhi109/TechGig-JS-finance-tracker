@@ -119,7 +119,15 @@ input[type="text"], input[type="number"] {
 input[type="radio"] {
     margin-right: 5px;
 }
-
+.transaction-amount-inc {
+    margin-left: 8px;
+    color: green; 
+  }
+  
+  .transaction-amount-exp {
+    margin-left: 8px;
+    color: red; 
+  }
 button {
     display: block;
     width: 100%;

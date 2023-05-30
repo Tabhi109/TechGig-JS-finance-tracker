@@ -13,21 +13,29 @@ let income = 0;
 let expense = 0;
 let balance = 0;
 
+
+
 transBtn.addEventListener('click', () => {
     var isIncSelected = incomeCheck.checked;
     var isExpSelected = expenseCheck.checked;
+
     const amount = Number(transAmt.value);
+
+    if (amount < 0) {
+        alert('Please enter a valid amount');
+        return;
+    }
     if (isIncSelected) {
         income += amount;
         balance += amount;
         const listItem = document.createElement('li');
-        listItem.innerHTML = `${transDesc.value} <span class="transaction-amount">(+${amount})</span>`;
+        listItem.innerHTML = `${transDesc.value} <span class="transaction-amount-inc">(+${amount})</span>`;
         incomeList.appendChild(listItem);
     } else if (isExpSelected) {
         expense += amount;
         balance -= amount;
         const listItem = document.createElement('li');
-        listItem.innerHTML = `${transDesc.value} <span class="transaction-amount">(-${amount})</span>`;
+        listItem.innerHTML = `${transDesc.value} <span class="transaction-amount-exp">(-${amount})</span>`;
         expenseList.appendChild(listItem);
     } else {
         console.log('Error');
