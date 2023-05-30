@@ -22,7 +22,7 @@ Finance Tracker is a web application that allows you to track your income and ex
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/finance-tracker.git
+git clone https://github.com/Tabhi109/TechGig-JS-finance-tracker.git
 ```
 
 2. Open the index.html file in your preferred web browser.
