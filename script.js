@@ -20,7 +20,7 @@ transBtn.addEventListener('click', () => {
     var isExpSelected = expenseCheck.checked;
 
     const amount = Number(transAmt.value);
-
+    //check if amount is valid
     if (amount < 0) {
         alert('Please enter a valid amount');
         return;
