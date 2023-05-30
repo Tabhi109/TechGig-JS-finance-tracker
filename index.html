@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Finance Tracker</title>
+</head>
+<body>
+    <header>
+        <div class="head-text">
+            <h1 class="heading">Finance Tracker</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="show-bal-details">
+            <div id="balance">
+                <h4>Your Balance <br/>&#8377;<span id="bal">0</span></h4>
+            </div>
+            <div id="income">
+                <h4>Income <br/> &#8377;<span id="inc">0</span></h4>
+            </div>
+            <div id="expense">
+                <h4>Expense <br/>&#8377;<span id="exp">0</span></h4>
+            </div>
+        </div>
+        <div class="show-exp-details">
+            <div class="list-inc-exp">
+                <div class="income-list">
+                    <h3>Income</h3>
+                    <ul id="income-list">
+                        
+                    </ul>
+                </div>
+                <div class="expense-list">
+                    <h3>Expense</h3>
+                    <ul id="expense-list">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="get-details">
+            <h3>Add Transaction</h3>
+            <label>Description : <input type="text" id="transac" /></label><br/><br/>
+            <label><input type="radio" id="income-check" name="transaction-type" value="income"/>Income</label>
+            <label><input type="radio" id="expense-check" name="transaction-type" value="expense"/>Expense</label><br/><br/>
+            <label>Amount : <input type="number" id="amount"/></label>
+            <button id="addbtn">Add</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
